@@ -1,0 +1,26 @@
+{
+  "dataImages":
+    [{
+      "bgImage": "assets/images/background.jpg",
+      "iconTrip": "assets/images/icon_rocket.png",
+      "logo": "assets/images/logo.png",
+      "imageRocket": "assets/images/rocket.jpg",
+      "title" : "Visa to the Moon",
+      "subtitle" : "Your trip start here",
+      "hash" : "#moontrip #visamoon #moontickets",
+      "linkprev" : "prev",
+      "linknext" : "next",
+      "easeView" : "view ease"
+    },{
+      "bgImage": "assets/images/background.jpg",
+      "iconTrip": "assets/images/icon_rocket.png",
+      "logo": "assets/images/logo.png",
+      "imageRocket": "assets/images/rocket.jpg",
+      "title" : "Visa to the Moon",
+      "subtitle" : "Your trip start here",
+      "hash" : "#moontrip #visamoon #moontickets",
+      "linkprev" : "prev",
+      "linknext" : "next",
+      "easeView" : "view ease"
+    }]
+}

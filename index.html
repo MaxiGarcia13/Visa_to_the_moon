@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Visa to the moon</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Visa to the Moon ayuda a la venta de tickets a la luna" />
+        <meta property="og:image" content="./assets/images/logo.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <link href="./build/styles/index.css" rel="stylesheet"/>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <main class="wrapper ">
+            <div class="card-main grid">
+                <img
+                    id="logo"
+                    class="logo"
+                    src="./assets/images/logo.png"
+                    alt="Logo de Visa to the moon"
+                />
+                <h1 id="title" class="title">Visa to the moon</h1>
+                <div class="button-wrapper">
+
+                    <button class="btn primary">Start your trip ></button>
+                </div>
+                <div id="bgImage" class="grid-item-1 card-item-1"></div>
+                <div class="grid-item-2">
+                    <div class="card-item-2 slow-shake"></div>
+                </div>
+                <div class="grid-item-3 card-item-3 rocket-wrapper">
+                    <img
+                        id="iconTrip"
+                        class="icon"
+                        src="./assets/images/icon_rocket.png"
+                        alt="Icono de nave espacial despegando"
+                    />
+                    <h2 id="subtitle" class="subtitle">Your trip start hear</h2>
+                    <div class="line"></div>
+                    <p id="hash" class="hashtag">#moontrip #visamoon</p>
+                </div>
+                <div id="imageRocket" class="grid-item-4 card-item-4"></div>
+                <div class="grid-item-5 card-item-5">
+
+                    <div class="loading-wrapper">
+                        <div class="loader"></div>
+                    </div>
+                    <nav class="navigation">
+                        <a id="link-prev" name="nav-item" href="?item=prev" class="nav-item">
+                            prev
+                        </a>
+                        <a id="link-viewEase" name="nav-item" href="?item=viewEase" class="nav-item active">
+                            view ease
+                        </a>
+                        <a id="link-next" name="nav-item" href="?item=next" class="nav-item ">
+                            next
+                        </a>
+                    </nav>
+
+                    <h2 class="footer-title">
+                        Explore the surface
+                    </h2>
+                </div>
+                <div class="grid-item-6">
+                    <div class="card-item-6 slow-shake"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

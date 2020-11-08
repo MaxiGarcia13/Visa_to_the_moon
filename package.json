@@ -1,0 +1,16 @@
+{
+  "name": "visa_to_the_moon",
+  "version": "1.0.0",
+  "description": "Visa to the Moon que ayude a la venta de tickets a la luna",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve ."
+  },
+  "author": "Maximiliano Garcia Mortigliengo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "serve": "^11.3.2"
+  }
+}

@@ -1,0 +1,19 @@
+@import './variables.scss';
+@import './animations.scss';
+
+.loader {
+    width: 100%;
+    height: 4px;
+    background-color: $font-color-primary;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        animation: moving-to-right-animation 2s linear infinite;
+        content: ' ';
+        width: 30%;
+        height: 100%;
+        background: $font-color-accent;
+        position: absolute;
+    }
+}

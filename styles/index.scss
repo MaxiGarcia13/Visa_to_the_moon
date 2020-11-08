@@ -1,0 +1,229 @@
+@import './variables.scss';
+@import './cards.scss';
+@import './loader.scss';
+
+body {
+    background: $background-color-primary;
+    margin: 0;
+    font-family: $font-family-primary;
+    color: $font-color-primary;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body,
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    z-index: 2;
+    font-size: 78px;
+    position: absolute;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo {
+    z-index: 2;
+    position: absolute;
+    height: 194px;
+    width: 194px;
+}
+
+.button-wrapper {
+    background: transparent;
+    z-index: 2;
+    position: absolute;
+}
+
+.btn {
+    font-size: 24px;
+    font-family: $font-family-secodnary;
+    font-weight: 600;
+    border-radius: 1px;
+    font-style: italic;
+    box-shadow: 0 1px 2px 0 rgba($background-color-third, 0.302), 0 1px 3px 1px rgba($background-color-third, 0.149);
+
+    &.primary {
+        background: $button-color-accent;
+        color: $font-color-primary;
+        height: 72px;
+        width: 246px;
+        border: 1px solid $button-color-accent;
+    }
+}
+
+.rocket-wrapper {
+    font-family: $font-family-secodnary;
+
+    & .icon {
+        height: 105px;
+        width: 105px;
+    }
+
+    & .line {
+        height: 4px;
+        width: 100px;
+        background-color: $font-color-accent;
+    }
+
+    & .subtitle,
+    .hashtag {
+        margin: 0;
+        padding: 0;
+    }
+
+    & .subtitle {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    & .hashtag {
+        margin-top: 15px;
+    }
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+
+    & .nav-item {
+        font-size: 18px;
+        color: $font-color-accent;
+        margin: 0 10px;
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: $font-family-secodnary;
+        padding-bottom: 5px;
+
+        &.active {
+            color: $font-color-primary;
+            border-bottom: 2px solid $font-color-primary;
+        }
+    }
+}
+
+.loading-wrapper {
+    flex: 0.6;
+    padding: 0 40px;
+
+    & > * {
+        max-width: 200px;
+    }
+}
+
+.navigation,
+.loading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Notebook Portrait and Landscape */
+@media only screen and (min-width: 1025px) {
+    .title {
+        top: 300px;
+    }
+
+    .logo {
+        top: 54px;
+    }
+
+    .title,
+    .logo,
+    .button-wrapper {
+        left: 10%;
+    }
+
+    .button-wrapper {
+        top: 442px;
+        margin-left: 15px;
+    }
+
+    .rocket-wrapper {
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+}
+
+/* Tablet Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        display: block;
+    }
+
+    .title {
+        top: 312px;
+        max-width: 370px;
+        font-size: 68px;
+    }
+
+    .logo {
+        top: 76px;
+        left: 124px;
+    }
+
+    .button-wrapper {
+        top: 470px;
+    }
+
+    .title,
+    .button-wrapper {
+        left: 90px;
+    }
+
+    .rocket-wrapper {
+        top: 76px;
+        padding-left: 30px;
+    }
+}
+
+/* Phone Portrait and Landscape */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .wrapper {
+        display: block;
+    }
+
+    .title {
+        font-size: 58px;
+        top: 495px;
+        padding-left: 20px;
+    }
+
+    .logo {
+        top: 50px;
+        left: calc(50% - 97px);
+    }
+
+    .rocket-wrapper {
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .button-wrapper {
+        top: 640px;
+        padding: 20px 0;
+        background-color: $background-color-scondary;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation {
+        display: none;
+    }
+}

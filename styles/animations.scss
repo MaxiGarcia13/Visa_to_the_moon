@@ -1,0 +1,35 @@
+.slow-shake {
+    animation: slow-shake-animation 2000ms infinite ease-in-out;
+    transition: transform 200ms;
+}
+
+.moving-to-rigth {
+    animation: moving-to-right-animation 2s linear infinite;
+    transition: transform 200ms;
+}
+
+/* The animation code */
+@keyframes slow-shake-animation {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(2px) translateX(2px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes moving-to-right-animation {
+    0% {
+        transform: translateX(0%);
+        width: 0%;
+    }
+    50% {
+        width: 30%;
+    }
+    100% {
+        transform: translateX(400%);
+    }
+}
