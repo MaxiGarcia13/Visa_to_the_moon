@@ -10,7 +10,6 @@
   "author": "Maximiliano Garcia Mortigliengo",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0",
     "serve": "^11.3.2"
   }
 }
